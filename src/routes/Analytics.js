@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import { page } from '../services/analytics-service';
 import RoutesPath from '../constants/routes-path';
+// import settings from '../config';
 
 const Analytics = ({ children }) => {
     const history = useHistory();

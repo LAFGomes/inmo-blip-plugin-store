@@ -23,3 +23,4 @@ const Routes = () => (
 );
 
 export default Routes;
+// ALTERAR AQUI. CRIAR ACTIVATION HOME PAGE, ALREADY PAYED PAGE AND NO INTERACTION

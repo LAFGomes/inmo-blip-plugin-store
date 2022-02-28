@@ -1,9 +1,9 @@
-# Default values for PLUGIN_NAME.
+# Default values for inmo-blip-plugin-store.
 # Declare variables to be passed into your templates.
-fullnameOverride: PLUGIN_NAME
+fullnameOverride: inmo-blip-plugin-store
 replicaCount: 1
 image:
-    repository: PLUGIN_NAME
+    repository: inmo-blip-plugin-store
     tag: #{Build.BuildId}#
     pullPolicy: IfNotPresent
     imagePullSecretName: acr-takeprivate-secret
@@ -43,7 +43,7 @@ environment:
     stage: staging
 
 appSettings:
-    configMap: PLUGIN_NAME
+    configMap: inmo-blip-plugin-store
     path: /app/src/config/appsettings.json
     subPath: appsettings.json
 
