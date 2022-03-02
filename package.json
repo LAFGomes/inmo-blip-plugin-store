@@ -1,5 +1,5 @@
 {
-  "name": "inmo-blip-plugin-store",
+  "name": "inmo-rd-plugin-store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -3,6 +3,7 @@ import { checkBucketFileExistenceAsync } from '../../services/blip-commands-serv
 import PluginConfig from '../../constants/plugin-config';
 import SignIn from '../SignIn';
 import PaymentAnalysis from '../PaymentAnalysis';
+import TutorialPage from '../TutorialPage';
 import Header from '../../components/PageHeader';
 
 const PAGE_TITLE = 'Pagamento - RD Station (Ativo)';
@@ -50,7 +51,7 @@ const Home = () => {
         if (activationState === PluginConfig.CONFIGURED_STATE) {
             const body = (<div className="flex flex-column items-center justify-center ph1 ph4-m ph5-ns pb2">
                 {header}
-                <p>Under Development</p>
+                <TutorialPage />
             </div>);
             return body;
         }
